@@ -33,8 +33,6 @@ export async function getServerSideProps(context) {
     }`
   ).then((res) => res.json());
 
-  console.log(genre);
-
   return {
     props: {
       results: request.results,
